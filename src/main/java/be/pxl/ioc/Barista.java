@@ -6,8 +6,9 @@ class Barista {
     private final String name;
     private WorkEthic workEthic;
 
-    Barista(String name) {
+    Barista(String name, WorkEthic ethic) {
         this.name = name;
+        this.workEthic = ethic;
         if (Objects.equals(name, "vicky")) {
             workEthic = new CustomerFriendlyWorkEthic();
         } else if (Objects.equals(name, "gemma")) {
